@@ -1,0 +1,329 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Body */
+body {
+    background-color: #121212; /* Dark background */
+    color: #00FF00; /* Neon green text */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #00FF00;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+a:hover {
+    color: #32CD32; /* Light green on hover */
+    text-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 15px #32CD32;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a; /* Dark background for header */
+    padding: 20px 0;
+    border-bottom: 2px solid #00FF00; /* Green neon border */
+    box-shadow: 0 0 10px #00FF00;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    color: #00FF00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+header nav ul li a:hover {
+    color: #32CD32;
+    text-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 15px #32CD32;
+}
+
+/* Main Content */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Blog Post */
+
+.post-content li {
+    text-decoration: none;
+}
+.blog-post {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 255, 0, 0.2);
+}
+
+.blog-post h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+.blog-post h3 {
+    font-size: 1.8rem;
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    color: #B0B0B0;
+    margin-top: 10px;
+}
+
+.blog-post .back-button {
+    display: inline-block;
+    background-color: #00FF00;
+    color: #121212;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.blog-post .back-button:hover {
+    background-color: #32CD32;
+    color: #121212;
+    text-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 15px #32CD32;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    color: #00FF00;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #00FF00;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+.sidebar ul li a:hover {
+    color: #32CD32;
+    text-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 15px #32CD32;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #00FF00;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .blog-post {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Neon Table */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px #00FF00; /* Neon green shadow */
+    color: #00FF00; /* Neon green text */
+}
+
+th, td {
+    border: 1px solid #00FF00; /* Neon green border */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #003300; /* Dark green background */
+    color: #00FF00; /* Neon green text */
+}
+
+tr:nth-child(even) {
+    background-color: #001a00; /* Darker green for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #002200; /* Slightly lighter green for odd rows */
+}
+
+tr:hover {
+    background-color: #004400; /* Bright green on hover */
+}
+
+/* Blog Post Content */
+.post-content {
+    font-size: 1.2rem;
+    color: #B0B0B0; /* Light grey text */
+    margin-top: 20px;
+    line-height: 1.6;
+    padding: 15px;
+    border-left: 3px solid #00FF00; /* Neon green left border */
+    background-color: #1a1a1a; /* Dark background to match the blog */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2); /* Soft neon green glow */
+    border-radius: 5px;
+}
+
+/* Specific Styles for Headers in the Post */
+.post-content h3, .post-content h4 {
+    font-size: 1.8rem;
+    color: #00FF00; /* Neon green headers */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Paragraphs in the Post */
+.post-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #B0B0B0; /* Light grey text */
+}
+
+/* List Styles */
+.post-content ul, .post-content ol {
+    margin: 10px 0 20px 20px;
+}
+
+.post-content li {
+    font-size: 1.1rem;
+    color: #B0B0B0;
+}
+
+/* Code Block Styling */
+.post-content pre {
+    background-color: #121212;
+    color: #00FF00;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FF00;
+    font-size: 1rem;
+    overflow-x: auto;
+}
+
+/* Table Styling for Post */
+.post-content table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px #00FF00; /* Neon green shadow */
+    color: #00FF00; /* Neon green text */
+}
+
+.post-content th, .post-content td {
+    border: 1px solid #00FF00; /* Neon green border */
+    padding: 10px;
+    text-align: center;
+}
+
+.post-content th {
+    background-color: #003300; /* Dark green background */
+    color: #00FF00; /* Neon green text */
+}
+
+.post-content tr:nth-child(even) {
+    background-color: #001a00; /* Darker green for even rows */
+}
+
+.post-content tr:nth-child(odd) {
+    background-color: #002200; /* Slightly lighter green for odd rows */
+}
+
+.post-content tr:hover {
+    background-color: #004400; /* Bright green on hover */
+}
+
+/* Sidebar List Items */
+aside.sidebar ul li a {
+    color: #00FF00; /* Neon green text */
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00; /* Neon glow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis when text overflows */
+    display: block; /* Ensure it's treated as block-level element */
+    width: 100%; /* Ensure the text stays within the bounds */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
