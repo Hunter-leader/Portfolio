@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI Model</title>
+    <link rel="stylesheet" href="/css/Blog_post.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Hunter's Cyber Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="/html/Home.html">Home</a></li>
+                    <li><a href="/html/About.html">About</a></li>
+                    <li><a href="/html/Blog.html">Blog</a></li>
+                    <li><a href="/html/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="blog-post">
+            <h2>OSI Model & Layer</h2>
+            <p class="post-date">December 17, 2024</p>
+
+            <div class="post-content">
+                <p>The OSI (Open Systems Interconnection) Model is a conceptual framework used to understand and implement network communications. It divides communication into seven layers, each with a specific function</p>
+
+                <br>
+                <hr>
+
+                <h3>OSI MODEL</h3>
+                <p>The full form of OSI is Open Systems Interconnection. In a network, when communication occurs between one device and another, it passes through each layer of the OSI model. The OSI model has a total of seven (7) layers, which are divided into three (3) categories.
+                    <br>
+                    <br>
+                    The top three layers are known as Software Layers, the bottom three layers are called Hardware Layers, and the middle layer is referred to as the Core Layer.
+                    <br>
+                    <br>All the applications we use in the network operate in the top three layers (Application Layers), while the hardware (such as Routers, Switches, Firewalls) is used in the bottom three layers (Hardware Layers). The Transport Layer interfaces between the Software Layers and Hardware Layers, which is why it is called the Core Layer.</p>
+                <br>
+                <ol>
+                    <li><strong>Physical Layer</strong> </li>
+                    <li><strong>Data Link Layer</strong></li>
+                    <li><strong>Network Layer</strong></li>                    
+                    <li><strong>Transport Layer</strong></li>                    
+                    <li><strong>Session Layer</strong></li>                    
+                    <li><strong>Presentation Layer</strong></li>                
+                    <li><strong>Application Layer</strong></li>
+                </ol>
+                <br>
+                <hr>
+
+                <h3>Application Layer:</h3>
+                <p>This is the seventh layer of the OSI model. The Application Layer provides a user interface and processes network data. The tasks performed by the Application Layer include resource sharing, remote file access, directory services, etc.</p>
+                <br>
+               
+                <h4>Protocol and Port Table</h4>
+                <table>
+                    <tr>
+                        <th>Protocol</th>
+                        <th>Port</th>
+                    </tr>
+                    <tr>
+                        <td>FTP</td>
+                        <td>20/21</td>
+                    </tr>
+                    <tr>
+                        <td>TFTP</td>
+                        <td>69</td>
+                    </tr>
+                    <tr>
+                        <td>Telnet</td>
+                        <td>23</td>
+                    </tr>   
+                    <tr>
+                        <td>DHCP</td>
+                        <td>67/68</td>
+                    </tr>
+                    <tr>
+                        <td>DNS</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>POP</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>IMAP</td>
+                        <td>143</td>
+                    </tr>
+                    <tr>
+                        <td>SMTP</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>HTTP</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            
+            <br>
+            <hr>
+
+                <h3>Presentation Layer:</h3>
+                <p>The Presentation Layer acts as a data translator for network services. The tasks performed by this layer include data conversion, data compression, and decryption.</p>
+                <br>
+                <p>The common data formats used in this layer are:</p>
+                <ul>
+                    <li>.jpg</li>
+                    <li>.mpeg</li>
+                </ul>
+            <br>
+                <p>This layer ensures that data sent from the sender is readable and usable by the receiver by converting it into an appropriate format.</p>
+        
+            <br>
+            <hr>
+
+                <h3>Session Layer:</h3>
+                <p>The Session Layer establishes, manages, and terminates the connection between the source and destination devices. It controls the session and disconnects it when necessary.</p>
+
+            <br>
+
+                <p>For <b>data transmission</b>, three types of control are used:</p>
+
+            <br>
+
+                <ul>
+                    <li>
+                        <b>simplex:</b><li>In simplex mode, data flows only in one direction.</li><li><br><strong>Example:</strong>A keyboard sending input to a monitor.</li></li>
+                    <li></li>
+                </ul>
+
+            <br>
+            <br>
+
+                <ul>
+                    <li>
+                        <b>Half-Duplex:</b><li>In half-duplex mode, data flows in both directions, but one direction at a time.</li><li><br><strong>Example:</strong>Walkie-talkie communication.</li></li>
+                    <li></li>
+                </ul>
+
+            <br>
+            <br>
+
+                <ul>
+                    <li>
+                        <b>Full-Duplex:</b><li>In full-duplex mode, data flows simultaneously in both directions.</li><li><br><strong>Example:</strong>Telephone conversations.</li></li>
+                    <li></li>
+                </ul>
+
+            <br>
+            <hr>
+
+            <h3>Transport Layer:</h3>
+                <p>The fourth layer of the OSI model is the Transport Layer. The function of this layer is to ensure that the data received from the Session Layer is reliably delivered to the other device.</p>
+
+            <br>
+
+                <p>In the Transport Layer, two types of transmission are used to deliver the data:</p>
+
+            <br>
+
+                <ul>
+                    <li>
+                        <b>Connection-Oriented:</b><li>Before sending data, the sender establishes a connection with the receiver through an Acknowledgment Signal.</li><li>This is a reliable method where the delivery of data is guaranteed.</li><li><br><strong>Example:</strong><b>TCP (Transmission Control Protocol).</b></li></li>
+                 <br>   
+                 <br>   
+                    
+                    <li><b>Connectionless:</b><li>Before sending data, the sender does not establish any Acknowledgment Signal with the receiver.</li><li>This is an unreliable method where the delivery of data is not guaranteed.</li><li><br><strong>Example:</strong><b>Example: UDP (User Datagram Protocol).</b></b></li></li>
+                </ul>
+
+            <br>
+            <hr>
+        
+                <h3>Network Layer:</h3>
+                <p>The function of the Network Layer is addressing and packet delivery. In this layer, data is encapsulated by adding a network address to the data packet. Routers are used at this layer, and they create routing tables for directing the data packets to their destination.</p>
+        
+            <br>
+            <hr>
+
+                <h3>Data Link Layer:</h3>
+                <p>The second layer of the OSI model is the Data Link Layer. The Data Link Layer works similarly to the Network Layer, but with a key difference. While the Network Layer transfers data outside the same network, the Data Link Layer transfers data packets within the same network.
+                    In other words, if two devices are within the same network, the Data Link Layer enables the transmission of data packets between them. The Data Link Layer takes data packets from the Network Layer, divides them into smaller parts called frames, and then transmits them.
+                    Like the Network Layer, the Data Link Layer also handles data flow, data control, error control, etc. You can think of this layer as creating a logical link between two devices.</p>
+        
+            <br>
+            <hr>
+
+                <h3>Physical Layer:</h3>
+                <p>The Physical Layer is the first layer of the OSI Model, located at the bottom. From its name, you can guess the type of work this layer does. It establishes a physical connection between two devices and transmits data from one device to another using physical media, such as cables. This layer converts data into a bitstream, meaning it transforms the data into 0s and 1s. The data is transmitted bit by bit.</p>
+            <br>
+                <ul>
+                    <p>Devices used in this layer include:</p><br>
+                    <li><b>Hub</b></li>
+                    <li><b>Twisted Pair Cable</b></li>
+                    <li><b>Fiber Optic Cable</b></li>
+                    <li><b>Coaxial Cable</b></li>
+                    <li><b>And more</b></li>
+                </ul>
+                <br>
+                <p>To easily remember which layer corresponds to Application Layer or Network Layer in the OSI</p>
+        </div>
+        <br>
+
+
+            <a href="/html/Blog.html" class="back-button">Back to Blog</a>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="single-blog.html">Understanding Malware Analysis</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Hunter | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

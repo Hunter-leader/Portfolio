@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00FF00; /* Neon green text */
+    background-color: #121212; /* Black background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #32CD32; /* Lighter green on hover */
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    text-shadow: 0 0 10px #00FF00; /* Neon glow for headers */
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a; /* Dark header background */
+    padding: 20px 0;
+    border-bottom: 2px solid #00FF00;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00FF00;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sections */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
+}
+
+.intro p, .about ul li, .learning .topic p, .achievements ul li {
+    line-height: 1.8;
+    text-shadow: 0 0 5px #00FF00;
+}
+
+/* Stats Section */
+.stats img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* TryHackMe Badge */
+.tryhackme .badge {
+    display: inline-block;
+    background-color: #00FF00;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tryhackme-badge iframe {
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #00FF00; /* Optional neon effect */
+}
+
+/* Learning Topics */
+.learning .topics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.learning .topic {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Contact Section */
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    border-top: 2px solid #00FF00;
+    color: #00FF00;
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px #00FF00;
+}
