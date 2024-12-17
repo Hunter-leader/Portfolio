@@ -1,33 +1,18 @@
-/* Reset some basic elements */
-* {
+/* General Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00FF00;
+    background-color: #121212;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* Body */
-body {
-    background-color: #121212; /* Dark background */
-    color: #00FF00; /* Green text */
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-a {
-    color: #00FF00;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #32CD32; /* Light green on hover */
+    text-align: center;
 }
 
 /* Header */
 header {
-    background-color: #1a1a1a; /* Dark background for header */
+    background-color: #1a1a1a;
     padding: 20px 0;
-    border-bottom: 2px solid #00FF00; /* Green border */
+    border-bottom: 2px solid #00FF00;
 }
 
 .header-container {
@@ -47,6 +32,8 @@ header h1 {
 header nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -58,125 +45,109 @@ header nav ul li a {
     color: #00FF00;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
     color: #32CD32;
 }
 
-/* Main Content */
-.main-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* Blog Content */
-.blog-content {
-    width: 70%;
-    padding-right: 20px;
-}
-
-.blog-content h2 {
-    font-size: 2.5rem;
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
     color: #00FF00;
+    padding: 80px 20px;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
+    text-shadow: 0 0 10px #00FF00;
 }
 
-.post {
-    background-color: #1a1a1a;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-.post h3 {
-    font-size: 1.8rem;
-    color: #00FF00;
-}
-
-.post p {
-    font-size: 1.1rem;
-    color: #B0B0B0;
-}
-
-.post .post-date {
-    font-size: 1rem;
-    color: #32CD32;
-}
-
-.read-more {
-    font-size: 1.1rem;
-    color: #00FF00;
-    margin-top: 10px;
+.cta-button {
     display: inline-block;
-}
-
-.read-more:hover {
-    color: #32CD32;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 30%;
-    background-color: #1a1a1a;
-    padding: 20px;
+    background-color: #00FF00;
+    color: #121212;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+    text-decoration: none;
 }
 
-.sidebar h2 {
-    font-size: 2rem;
+.cta-button:hover {
+    background-color: #32CD32;
+    color: #000;
+}
+
+/* Featured Blogs */
+.featured-blogs {
+    padding: 50px 20px;
+    border-top: 2px solid #00FF00;
+    margin-top: 20px;
+}
+
+.featured-blogs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.blogs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: #1a1a1a;
+    border: 2px solid #00FF00;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    font-size: 1rem;
     color: #00FF00;
-    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    color: #00FF00;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-.sidebar ul li a:hover {
+.blog-card a:hover {
     color: #32CD32;
 }
 
 /* Footer */
 footer {
     background-color: #1a1a1a;
-    color: #00FF00;
-    text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-    }
-
-    .blog-content {
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin-top: 20px;
-    }
+    border-top: 2px solid #00FF00;
+    color: #00FF00;
+    font-size: 1rem;
+    margin-top: 50px;
 }
